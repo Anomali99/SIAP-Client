@@ -1,0 +1,101 @@
+.container {
+  position: relative;
+  display: flex;
+  flex: 1;
+  height: 90vh;
+  width: 90vw;
+  margin: auto 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg_img {
+  background-image: url("../../assets/login-bg.png");
+  background-size: cover;
+  height: 100%;
+  width: 73%;
+  border-radius: 6px;
+  position: relative;
+  left: 0;
+}
+
+.menu_container {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  margin-left: 2%;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 6px;
+  border: #114230 solid 3px;
+  align-items: center;
+}
+
+.text,
+.title {
+  color: #000;
+}
+
+.text {
+  font-size: 20px;
+  margin-top: 1rem;
+}
+
+.inputs,
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  margin-top: 30px;
+}
+
+.pp_img {
+  width: 60%;
+  margin: 1rem auto;
+}
+
+.input {
+  color: #000;
+  background-color: #d9d9d9;
+  width: 20rem;
+  height: 2rem;
+  border-radius: 6px;
+  border: #000 solid 1px;
+}
+
+.label {
+  color: #000;
+  margin-left: 0;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+
+.submit_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  margin-top: 3rem;
+}
+
+.submit {
+  display: flex;
+  background-color: #114230;
+  border-radius: 6px;
+  width: 20rem;
+  height: 3rem;
+  color: #fff;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cancel {
+  color: #000;
+  margin-top: auto;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
