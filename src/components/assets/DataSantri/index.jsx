@@ -30,7 +30,7 @@ const DataSantri = () => {
       <div className={styles.btnContainer}>
         <div className={styles.btn} onClick={openModal}>
           <img src={santri_menu} alt="Tambah Data Santri" />
-          <h5>{isSelected != -1 ? "Tambah" : "Ubah"} Data Santri</h5>
+          <h5>{isSelected == -1 ? "Tambah" : "Ubah"} Data Santri</h5>
         </div>
         {isSelected > -1 ? (
           <>
@@ -78,7 +78,76 @@ const DataSantri = () => {
           </div>
         ))}
       </div>
-      {isModalOpen && <ModalContent closeModal={closeModal} />}
+      {isModalOpen && <ModalContent closeModal={closeModal} title={"Add Santri"} description={
+        <button className={styles.closeButton}>
+          Add
+        </button>} content={ 
+        <div className={styles.inputs}>
+          <label className={styles.label} htmlFor="name">
+            Name
+          </label>
+          <input
+            className={styles.input}
+            type="text"
+            id="name"
+          />
+          <label className={styles.label} htmlFor="address">
+            Address
+          </label>
+          <input
+            className={styles.input}
+            type="text"
+            id="address"
+          />
+          <label className={styles.label} htmlFor="place">
+            Tempat Lahir
+          </label>
+          <input
+            className={styles.input}
+            type="text"
+            id="place"
+          />
+          <label className={styles.label} htmlFor="tgl">
+            Tanggal Lahir
+          </label>
+          <input
+            className={styles.input}
+            type="date"
+            id="tgl"
+          />
+          <label className={styles.label} htmlFor="year">
+            Tahun Masuk
+          </label>
+          <input
+            className={styles.input}
+            type="text"
+            id="year"
+          />
+          <label className={styles.label} htmlFor="gender">
+            Gender
+          </label>
+          <input
+            className={styles.input}
+            type="text"
+            id="gender"
+          />
+          <label className={styles.label} htmlFor="ortu">
+            Nama Wali
+          </label>
+          <input
+            className={styles.input}
+            type="text"
+            id="ortu"
+          />
+          <label className={styles.label} htmlFor="no">
+            Nomor Telephone
+          </label>
+          <input
+            className={styles.input}
+            type="text"
+            id="no"
+          />
+        </div> }/>}
     </div>
   );
 };

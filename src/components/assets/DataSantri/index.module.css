@@ -52,3 +52,45 @@
 .click {
   background-color: #a8a8a8;
 }
+
+
+.input {
+  color: #000;
+  background-color: #d9d9d9;
+  width: 100%;
+  height: 2rem;
+  border-radius: 6px;
+  border: #000 solid 1px;
+}
+
+.label {
+  color: #000;
+  margin-left: 0;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+.inputs,
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  margin-top: 30px;
+}
+
+
+.closeButton {
+  position: absolute;
+  left: auto;
+  right: 7rem;
+  padding: 10px 20px;
+  background: #36f436;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  background: #6bd32f;
+}

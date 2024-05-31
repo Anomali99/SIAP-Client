@@ -1,15 +1,15 @@
 import React from "react";
 import styles from "./index.module.css";
 
-const ModalContent = ({ closeModal, content }) => {
+const ModalContent = ({ closeModal, content, title, description }) => {
   return (
     <div className={styles.modalOverlay}>
       <div className={styles.modalContent}>
         <button className={styles.closeButton} onClick={closeModal}>
           Close
         </button>
-        <h2>Modal Title</h2>
-        <p>This is a modal pop-up.</p>
+        {description}
+        {title ? <h2>{title}</h2> : ""}
         {content}
       </div>
     </div>

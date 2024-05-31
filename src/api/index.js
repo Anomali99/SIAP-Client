@@ -11,7 +11,7 @@ const HitAPI = async (body, url, callback) => {
       options.body = JSON.stringify(body);
     }
 
-    const response = await fetch(url, options);
+    const response = await fetch(`http://10.2.12.33:5000/${url}`, options);
     const result = await response.json();
     callback(result);
   } catch (error) {
@@ -21,7 +21,7 @@ const HitAPI = async (body, url, callback) => {
 };
 
 const AsatidzLogin = async (data, callback) => {
-  const url = "http://127.0.0.1:5000/asatidz/login";
+  const url = "asatidz/login";
   const body = {
     telephone_number: data.phone,
     password: data.password,
@@ -30,7 +30,7 @@ const AsatidzLogin = async (data, callback) => {
 };
 
 const AsatidzAdd = async (data, callback) => {
-  const url = "http://127.0.0.1:5000/asatidz/add";
+  const url = "asatidz/add";
   const body = {
     name: data.name,
     gender: data.gender,
@@ -45,17 +45,17 @@ const AsatidzAdd = async (data, callback) => {
 };
 
 const AsatidzGet = async (callback) => {
-  const url = "http://127.0.0.1:5000/asatidz/get";
+  const url = "asatidz/get";
   await HitAPI(null, url, callback);
 };
 
 const SantriGet = async (callback) => {
-  const url = "http://127.0.0.1:5000/santri/get";
+  const url = "santri/get";
   await HitAPI(null, url, callback);
 };
 
 const SantriAdd = async (data, callback) => {
-  const url = "http://127.0.0.1:5000/santri/add";
+  const url = "santri/add";
   const body = {
     name: data.name,
     address: data.address,
