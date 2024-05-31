@@ -1,19 +1,25 @@
 import { useState } from "react";
 import styles from "./index.module.css";
-import logo_pp from "/logo-pp.png";
+import { logo_pp, login_bg } from "../../assets/index";
 import { Link } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 
 function LoginPage({ asatidz, value }) {
   const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleSubmit = () => {
     value({ phone, password });
+    setIsLoggedIn(true);
   };
+
+  if (isLoggedIn)
+    return <Navigate to={`/${asatidz ? "asatidz" : "santri"}/dashboard`} />;
 
   return (
     <div className={styles.container}>
-      <div className={styles.bg_img}></div>
+      <img className={styles.bg_img} src={login_bg} alt="" />
       <div className={styles.menu_container}>
         <div className={styles.text}>
           التطبيق الفائق للمدرسة الداخلية الإسلامية

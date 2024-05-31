@@ -1,0 +1,54 @@
+.page {
+  width: 100%;
+  height: 100%;
+}
+.btnContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.btn {
+  background-color: #00ffa3;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.btn h5 {
+  color: #000;
+}
+
+.title {
+  color: #000;
+  padding: 0 1rem;
+}
+.table {
+  width: 95%;
+  height: initial;
+  border: 1px solid #000;
+  margin-left: 1rem;
+}
+.header,
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.header h4,
+.row h5 {
+  display: flex;
+  color: #000;
+  margin: 0;
+  width: 100%;
+  justify-content: center;
+  border: 1px solid #000;
+}
+
+.row {
+  cursor: pointer;
+}
+
+.click {
+  background-color: #a8a8a8;
+}

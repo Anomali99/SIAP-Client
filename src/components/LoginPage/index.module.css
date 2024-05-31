@@ -10,7 +10,6 @@
 }
 
 .bg_img {
-  background-image: url("../../assets/login-bg.png");
   background-size: cover;
   height: 100%;
   width: 73%;

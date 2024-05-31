@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./index.module.css";
 import logo_pp from "/logo-pp.png";
 import { Navigate } from "react-router-dom";
 
 function LandingPage() {
-  const [goAsatidz, setAsatidz] = React.useState(false);
-  const [goSantri, setSantri] = React.useState(false);
+  const [goAsatidz, setAsatidz] = useState(false);
+  const [goSantri, setSantri] = useState(false);
 
   if (goAsatidz) return <Navigate to="/asatidz" />;
   if (goSantri) return <Navigate to="/santri" />;

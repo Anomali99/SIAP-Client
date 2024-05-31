@@ -1,0 +1,9 @@
+.dashboard {
+  width: 100%;
+  height: 90%;
+}
+.dashboard :where(h1, h2) {
+  color: #000;
+  width: 90%;
+  padding: 0 2rem;
+}

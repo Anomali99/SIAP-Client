@@ -1,0 +1,51 @@
+.container {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg {
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  z-index: 1;
+}
+
+.logo {
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  z-index: 2;
+  top: 1rem;
+  bottom: auto;
+  left: 1rem;
+  right: auto;
+}
+
+.logout {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  z-index: 3;
+  top: 1rem;
+  bottom: auto;
+  left: auto;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.title {
+  position: absolute;
+}
+
+.card {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: auto;
+  bottom: 1rem;
+  z-index: 5;
+}
